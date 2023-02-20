@@ -37,5 +37,19 @@ public class BinaryTreeController {
             gc.fillOval(x - RADIUS, y - RADIUS, 2 * RADIUS, 2 * RADIUS);
             gc.strokeOval(x - RADIUS, y - RADIUS, 2 * RADIUS, 2 * RADIUS);
             gc.setFill(Color.BLACK);
+            gc.fillText(node.value + "", x - 5, y + 5);
+            if (node.left != null) {
+                gc.strokeLine(x - spacing, y + RADIUS, x, y);
+                drawTree(node.left, x - spacing, y + 2 * RADIUS, spacing / 2);
+            }
+            if (node.right != null) {
+                gc.strokeLine(x + spacing, y + RADIUS, x, y);
+                drawTree(node.right, x + spacing, y + 2 * RADIUS, spacing / 2);
+            }
+        }
 
+    public void setRoot(TreeNode root) {
+        this.root = root;
     }
+
+}
