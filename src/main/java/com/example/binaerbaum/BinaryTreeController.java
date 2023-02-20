@@ -16,7 +16,7 @@ public class BinaryTreeController {
 
         private static final int WIDTH = 800;
         private static final int HEIGHT = 600;
-
+    private static final int RADIUS = 20;
         private static final int PADDING_X = 50;
         private static final int PADDING_Y = 50;
 
@@ -32,6 +32,10 @@ public class BinaryTreeController {
                 return;
             }
             gc.setFill(Color.WHITE);
-            gc.setStroke();
+            gc.setStroke(Color.BLACK);
+            gc.setLineWidth(2.0);
+            gc.fillOval(x - RADIUS, y - RADIUS, 2 * RADIUS, 2 * RADIUS);
+            gc.strokeOval(x - RADIUS, y - RADIUS, 2 * RADIUS, 2 * RADIUS);
+            gc.setFill(Color.BLACK);
 
     }
