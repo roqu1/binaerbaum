@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.binaerbaum.BinaryTreeController">
-
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.binaerbaum.BinaryTreeController">
+   <children>
+      <TextField alignment="TOP_CENTER" maxWidth="200" promptText="Schreiben Sie eine Rechnung auf">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Reflection fraction="1.0" topOpacity="0.3" />
+         </effect>
+      </TextField>
+      <Canvas height="300.0" width="500.0" />
+   </children>
 </VBox>

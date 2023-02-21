@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 
 public class BinaryTreeController {
 
-        @FXML
+       /* @FXML
         private Canvas canvas;
 
         private GraphicsContext gc;
@@ -39,17 +39,15 @@ public class BinaryTreeController {
             gc.setFill(Color.BLACK);
             gc.fillText(node.value + "", x - 5, y + 5);
             if (node.left != null) {
-                gc.strokeLine(x - spacing, y + RADIUS, x, y);
-                drawTree(node.left, x - spacing, y + 2 * RADIUS, spacing / 2);
+
             }
-            if (node.right != null) {
-                gc.strokeLine(x + spacing, y + RADIUS, x, y);
-                drawTree(node.right, x + spacing, y + 2 * RADIUS, spacing / 2);
-            }
+
         }
 
     public void setRoot(TreeNode root) {
         this.root = root;
     }
+
+        */
 
 }
